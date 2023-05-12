@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>NewJeans | by KennOnirom</title>
+  <script src="https://kit.fontawesome.com/3b4641e9b7.js" crossorigin="anonymous"></script>
+
+  <meta name="viewport" content="with-device-width, initial-scale=1.0">
+
+  <!-- This is a comment -->
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+<body>
+<div >
+  <div >
+    <!-- header  -->
+    <section class="header">
+      <nav>
+        <a data-bs-toggle="modal" data-bs-target="#exampleModal" id="fix-padding"><img src="newbunny.jpg" alt="newjeans bunny"></a><br>
+        <div class="nav-links" id="navLinks">
+          <!-- close icon -->
+            <i id="x-mark" class="fa-solid fa-circle-xmark fa-lg " onclick="hideMenu()" style="color: #ffffff;"></i>
+
+            <!-- navigate -->
+            <ul>
+              <li><a href="./index.html"><b>NewJeans</b></a></li>
+              <li><a href="#introduction"><b>Introduction</b></a></li>
+              <li><a href="#members"><b>Members</b></a></li>
+              <li><a href="#contact"><b>Contact</b></a></li>
+            </ul>
+      </div>
+      <!-- menu -->
+      <i id="menu" class="fa-solid fa-bars fa-lg "  onclick="showMenu()" style="color: #ffffff;"></i>
+      </nav>
+    </section>
+
+    <!-- hides the menu and close bar when using PC -->
+    <script>
+      var navLinks= document.getElementById("navLinks");
+
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+<!-- Sample opening (infront of the header bg) -->
+<div class="text-box">
+  <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="bunnybunny.gif"></button>
+  <h1>Hello, Bunnies</h1>
+  <br>
+  <a href="#introduction" class="hero-btn">Pick a bias</a>
+</div>
+
+
+
+
+<!-- introduction section -->
+  <section class="introduction">
+    <div id="introduction">
+
+        <h1>About NewJeans</h1>
+          <p >
+            <b><i>NewJeans</i></b> (Korean: 뉴진스; RR: <em>Nyujinseu</em>) is a South Korean girl group formed by ADOR.
+            The group is composed of five members: Minji, Hanni, Danielle, Haerin, and Hyein.
+            They debuted in July 2022 with the single "Attention", followed shortly afterwards by two other singles,"Hype Boy" and "Cookie".
+
+            The singles were all featured on their eponymous debut extended play,
+            released in August 2022. In 2023, they released their first single album OMG to commercial success.
+            It was accompanied by two singles, "Ditto" and "OMG
+          </p>
+
+      <div class="fyi">
+        <div class="row1">
+          <div>
+            <img src="newbunny.jpeg" alt="bunny">
+          </div>
+          <div class="intro-col">
+            <h1>Name Origin</h1>
+            <p>
+              The group's name, NewJeans, is a double entendre.
+              It alludes to the idea that jeans are a timeless fashion item and the group's intention to carve a timeless image for themselves.
+              The name is also a word play on the phrase "new genes", referring to the group ushering a new generation of pop music.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+          </div>
+
+  </section>
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">sheesh</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="tenor-gif-embed" data-postid="26319827" data-share-method="host" data-aspect-ratio="1.02236" data-width="100%"><a href="https://tenor.com/view/new-jeans-gif-26319827">New Jeans GIF</a>from <a href="https://tenor.com/search/new+jeans-gifs">New Jeans GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <section class="members">
+    <div id="members">
+      <h1>Members</h1>
+
+      <div class="row">
+        <div class="members-col"><a href="minji.html">
+          <img src="1_minji.jpeg" alt="Minji">
+          <h3>Minji</h3>
+        </a></div>
+        <div class="members-col"><a href="hanni.html">
+          <img src="1_hanni.jpeg" alt="Hanni">
+          <h3>Hanni</h3>
+        </a></div>
+        <div class="members-col"><a href="danielle.html">
+          <img src="1_Danielle.jpeg" alt="Danielle">
+          <h3>Danielle</h3>
+        </a></div>
+        <div class="members-col"><a href="haerin.html">
+          <img src="1_Haerin.jpeg" alt="Haerin">
+          <h3>Haerin</h3>
+        </a></div>
+        <div class="members-col"><a href="hyein.html">
+          <img src="1_Hyein.jpeg" alt="Hyein">
+          <h3>Hyein</h3>
+        </a></div>
+
+
+      </div>
+
+  </section>
+
+    <section class="introduction">
+      <h1>Latest Single</h1>
+      <iframe width="810" height="456" src="https://www.youtube.com/embed/_ZAgIHmHLdc" title="NewJeans (뉴진스) &#39;OMG&#39; Official MV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <footer id="contact">
+        <p>
+          <strong>gmail:</strong> kennonirom@gmail.com
+          <strong>phone:</strong> +639154564720
+        </p>
+      </footer>
+      </div>
+    </section>
+
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

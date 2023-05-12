@@ -1,0 +1,19 @@
+sort1 uses: bubble sort
+
+How do you know?: 2x slower than selection sort
+
+sort2 uses: merge sort
+
+How do you know?: fastest time
+
+sort3 uses: selection sort
+
+How do you know?: 2x faster than bubble sort
+
+==============================================
+
+fastest and fraction of time = merge sort
+
+2x faster than bubble sort = slection sort
+
+2x slower than selection sort = bubble sort

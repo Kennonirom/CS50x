@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Symbols</th>
+        <th scope="col">Shares</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+    <!-- a for loop taht goes through each "part" of the data abse -->
+    {% for row in database%}
+      <tr>
+        <!-- The data that is outputed -->
+        <td>{{ row["symbol"] }}</td>
+        <td>{{ row["shares"] }}</td>
+        <td>{{ row["price"] }}</td>
+        <td></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td></td>
+            <td></td>
+            <th>Total Amount</th>
+            <!-- prints the total cash -->
+            <th>{{ cash }}</th>
+        </tr>
+    </tfoot>
+
+  </table>
+{% endblock %}

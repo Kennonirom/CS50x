@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Inventory
+{% endblock %}
+
+{% block main %}
+
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Item Code</th>
+        <th scope="col">Item Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Category</th>
+        <th scope="col">Price</th>
+        <th scope="col">Stocks</th>
+        <th scope="col"><button class="my-btn-style" type="button" >Add Item</button></th>
+        <th scope="col"><button class="my-btn-style" type="button" >Add Item</button></th>
+      </tr>
+    </thead>
+
+
+
+    <tbody>
+    {% for row in inventory%}
+      <tr>
+        <td>{{ row["id"] }}</td>
+        <td>{{ row["itemName"] }}</td>
+        <td>{{ row["description"] }}</td>
+        <td>{{ row["category"] }}</td>
+        <td>{{ row["price"] }}</td>
+        <td>{{ row["stocks"] }}</td>
+        <td><button  class="btn btn-primary" type="button">Edit</button></td>
+        <td><button class="btn btn-danger delete" type="button">Delete</button></td>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Launch demo modal
+        </button>
+
+    {% endfor %}
+    </tbody>
+  </table>
+
+
+
+{% endblock %}
